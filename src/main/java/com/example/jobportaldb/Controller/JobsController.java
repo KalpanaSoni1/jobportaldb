@@ -38,13 +38,14 @@ public class JobsController {
 		return mIJobService.getJobInfo();
 	}
 	
-	// Add payment data
-		@CrossOrigin
-		@RequestMapping(value = "addJob", method = RequestMethod.POST)
-		public ResponseModel addJobinfo(@RequestBody RequestModel mRequestModel) {
-
-			return mIJobService.addJobs(mRequestModel);
-		}
+	
+	// Add add job data
+    @CrossOrigin
+	@RequestMapping(value = "addJob", method = RequestMethod.POST)
+	public ResponseModel addJobinfo(@RequestBody RequestModel mRequestModel) {
+     return mIJobService.addJobs(mRequestModel);
+	}
+    
 	@CrossOrigin
 	@RequestMapping(value = "getJobLocation", method = RequestMethod.GET)
 	public ResponseModel getJobLocationList() {

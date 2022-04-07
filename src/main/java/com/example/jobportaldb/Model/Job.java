@@ -27,13 +27,13 @@ public class Job {
 	@Column(name = "Job_code", length = 20)
     private String Job_code;
 	
-    @Column(name = "Job_name", length = 20)
+    @Column(name = "Job_name", length = 50)
     private String Job_name;
     
-    @Column(name = "company_name", length = 20)
+    @Column(name = "company_name", length = 50)
     private String CompanyName;
     
-	@Column(name = "description", length = 20)
+	@Column(name = "description", length = 150)
     private String description;
   
 	@Column(name = "user_name", length = 20)
